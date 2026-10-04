@@ -1,0 +1,3 @@
+pypdf[crypto]>=5,<7
+pypdfium2>=4.30,<6
+Pillow>=10.4,<13

@@ -1,0 +1,13 @@
+{
+  "name": "cay-steuerstudio-dev-tests",
+  "version": "0.4.0",
+  "private": true,
+  "description": "Optional development tests. The local application runs with Python; Node is not a runtime requirement.",
+  "scripts": {
+    "test": "node tests/frontend.test.cjs",
+    "test:browser": "node tests/euer_browser.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

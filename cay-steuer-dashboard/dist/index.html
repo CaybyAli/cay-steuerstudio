@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="cay-token" content="__CAY_TOKEN__">
+  <title>Cay Steuerstudio · Dein Überblick</title>
+  <meta name="description" content="Lokales Steuer-Dashboard für Belege, Briefe, Buchungen und bestätigte Fristen.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script><script src="/features.js" defer></script><script src="/banking.js" defer></script><script src="/intake.js" defer></script><script src="/pdf-review.js" defer></script><script src="/workspace.js" defer></script><script src="/annual.js" defer></script><script src="/euer.js" defer></script><link rel="stylesheet" href="/features.css"><link rel="stylesheet" href="/intake.css"><link rel="stylesheet" href="/studio.css"><link rel="stylesheet" href="/euer.css">
+</head>
+<body>
+  <a href="#main" class="skip">Zum Inhalt</a>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview" aria-label="Cay Steuerstudio, Übersicht"><span class="brand-mark">C</span><span>Cay<span class="brand-sub">Steuerstudio</span></span></a>
+      <div class="workspace-label">ARBEITSPLATZ</div>
+      <nav aria-label="Hauptnavigation" id="nav"></nav>
+      <div class="sidebar-bottom"><div class="local-label"><span class="local-dot"></span>Auf deinem Rechner</div><p>Deine Unterlagen bleiben lokal.</p><button class="sidebar-backup" data-action="backup">Sicherung herunterladen <span aria-hidden="true">↗</span></button><div class="version">0.4.0 · Update 04.10.2026</div></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><div><span class="breadcrumb">Steuerstudio</span><span class="breadcrumb-sep">/</span><span id="breadcrumb-current">Übersicht</span></div><div class="topbar-right"><span id="save-indicator" class="status-pill" role="status"></span><label for="year-select">Arbeitsjahr</label><select id="year-select" aria-label="Arbeitsjahr"></select><button id="theme-toggle" class="theme-toggle" type="button" data-action="toggle-theme" aria-pressed="false" aria-label="Darkmode aktivieren"><span id="theme-icon" aria-hidden="true">☾</span><span id="theme-label">Dark</span></button></div></header>
+      <main id="main" tabindex="-1"><div class="loading-state">Dein Arbeitsplatz wird geladen …</div></main>
+      <footer>Belege, EÜR-Arbeitsentwurf und Dokumentation · Keine ELSTER-Übermittlung</footer>
+    </div>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
